@@ -1,0 +1,40 @@
+.maar{
+margin: 80px;
+}
+.white{
+    color: azure;
+}
+.background{
+    color: azure;
+    background-color: rgb(15, 15, 15);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.green{
+    color: rgb(100, 228, 100);
+}
+.margin{
+    margin: -20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.negritas{
+    font-weight: bold;
+}
+.margin1{
+    margin: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+ol{
+    list-style: none;
+}
+/*Se pueden modificar varios elementos de la siguiente forma::after
+p,h1,h2,h3,h4{
+color: white;
+}*/
