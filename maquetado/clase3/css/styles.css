@@ -1,0 +1,96 @@
+p{
+
+}
+div p{
+
+}
+div p.parrafo1{
+    color:blue;
+}
+section{
+    border:1px solid #e3e3e3;
+    padding: 10px;
+    margin: 20px;
+}
+/* busca la sección que tenga un id selector hijo y en el parrafo has esto:  */
+section#selectorHijo p{
+color: red;
+
+}
+/* Busca el ID selector hijo directo, ubica la etiqueta article y en los p siendo hijo directo has esto:  (identado)*/
+#selectorHijoDirecto article >p{
+    color: blue;
+}
+/* busca el ID, a ese ID busca los article, y dentro, si hay un span y u nbotón abajo entonces has esto con el botón */
+#selectorHermanoGeneral article span ~ button{
+    background-color: black;
+    color: white;
+}
+/* funciona similar que el general solo que solo va a aplicar los cambios a 1 siguiente, y no a todos (a diferencia del anterior) */
+#selectorHermanoAdyacente article h3 + h4{
+    text-decoration: underline;
+    font-size: 20px;
+    color: brown;
+}
+/* Selector de atributo, con el * antes del igual se pueden aplicar a dominios */
+a[href*="google.com"]{
+    font-size: 50px;
+    color: green;
+}
+input[type="password"]{
+    padding:20px;
+}
+
+/* Pseudoselectores */
+
+/* hover */
+.buttonHover{
+    background-color: #4668a8;
+    color:white;
+    border: none;
+    padding: 10px;
+}
+
+.buttonHover:hover{
+    background-color: white;
+    color: #4668a8;
+    border: 1px solid #4668a8;
+    cursor: pointer;
+}
+.imagen{
+    width:100px;
+}
+.imagen:hover{
+    filter:sepia(0.5)
+}
+#visitedLinks a:visited{
+    color: red;
+}
+
+#visitedLinks a:active{
+    color: green;
+}
+/* first Child */
+#listaCajas .cajas{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    margin: 10px;
+
+}
+
+#listaCajas div:first-child{
+background-color: purple;
+}
+#listaCajas div:last-child{
+background-color: aqua;
+}
+/* se puede poner odd o even como argumentos para que podamos aplicar los estilos a varios elementos a la vez (pares y nones) */
+/* Tambien puede recibir como argumento xn donde x sería la cantidad de "saltos" que se van a recorrero por ejemplo 3n (cada 3er elemento) */
+#listaCajas div.cajas:nth-child(4){
+background-color: pink;
+}
+#listaCajas div.cajas:nth-last-child(5){
+    background-color: pink;
+}

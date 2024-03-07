@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p>parrafo solitou</p>
+    <div>
+        <h1>Hola</h1>
+        <p>Holaaaaaaa
+            <span>parrafo dentro del div</span>
+        </p>
+        <img src="aaaaaaaaaaaa" alt="">
+    </div>
+    <p>parrafo solo jsjs</p>
+    <div>
+        <p class="parrafo1" >Hellou</p>
+    </div> -->
+    <!-- camel case y snake case  -->
+    <!-- camelcase = selector hijo = selectorHijo -->
+    <!-- snake case = selector_hijo -->
+    <header>
+        <h1>Selectores avanzados</h1>
+        <nav>
+            <a href="./pages/pseudoselectores.html">ir a pseudoselectores</a>
+        </nav>
+    </header>
+    <main>
+        <section id="selectorHijo">
+            <h2>selector hijo</h2>
+            <div>
+                <p>parrafo dentro de un hijo </p>
+            </div>
+        </section>
+
+        <section id="selectorHijoDirecto">
+            <h2>Selector Hijo Directo</h2>
+            <article>
+                <p>spy parrafo hijo directo del artículo</p>
+                <p>spy parrafo hijo directo del artículo 2</p>
+                <div>
+                    <p>Soy parrafo hijo directo del div (por lo que no aplica el css) </p>
+                </div>
+                <p>spy parrafo hijo directo del artículo 2</p>
+                
+            </article>
+        </section>
+
+        <!-- Selector hermano General -->
+
+        <section id="selectorHermanoGeneral">
+            <h2>Selector Hermano General</h2>
+            <article>
+                <span>span Hermano</span>
+                <p>holaaa tonotos</p>
+                <button>Boton 1</button>
+                <button>Boton 1</button>
+                <p><button>holaaa</button></p>
+                <button>Boton 1</button>
+                <button>Boton 1</button>
+                <button>Boton 1</button>
+                <button>Boton 1</button>
+                
+            </article>
+        </section>
+        <section id="selectorHermanoAdyacente">
+            <article>
+                <h2>Selector hermano adyacente</h2>
+                <h3>h3 hijo</h3>
+                <h4>h4 hijo</h4>
+                <h4>h4 hijo</h4>
+                <h4>h4 hijo</h4>
+            </article>
+        </section>
+        <!-- Selector de atributos -->
+        <section>
+            <h2>Selector de atributos</h2>
+            <a href="google.com">Ir a Google</a>
+            <a href="kodemia.com.mx">Ir a kodemia</a>
+            <input type="text" placeholder="Ingresa tu nombre">
+            <input type="password" placeholder="Ingresa tu password">
+        </section>
+    </main>
+</body>
+</html>

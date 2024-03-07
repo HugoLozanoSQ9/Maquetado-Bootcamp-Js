@@ -1,0 +1,25 @@
+body{
+    background-color: #478170;
+}
+header{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.images img:first-child{
+    width: 40px;
+}
+.tamaño{
+    width: 150px;
+}
+.card{
+    background-color: #94cac2;
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.padding{
+    padding-top: 20px;
+}
