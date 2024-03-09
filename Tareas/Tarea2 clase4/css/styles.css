@@ -1,0 +1,43 @@
+body{
+    background-color: rgb(97, 97, 97);
+}
+.border{
+    border: 1px solid rgb(58, 41, 41);
+    text-align: center;
+    background-color: rgb(43, 42, 42);
+    color: rgb(209, 205, 205);
+    height: 50px;
+    width: 100%;
+}
+.center{
+    position: relative;
+    top: 30%;
+}
+.sticky{
+    position: sticky;
+    top:100px;
+    border: 1px solid red;
+    background-color:rgb(57, 66, 83);
+    width: 80%;
+    left: 10%;
+    
+    
+}
+
+.borde{
+    width: 50px;
+    color: forestgreen;
+    font-size:x-large;
+    font: bold;
+    width: 50%;
+}
+.list{
+    list-style: none;
+    font-size: x-large;
+}
+.dimension{
+
+    position: absolute;
+    left: 200px;
+
+}

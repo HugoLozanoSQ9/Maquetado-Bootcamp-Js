@@ -1,0 +1,121 @@
+.caja{
+    width:100px;
+    height: 100px;
+    background-color: red;
+    text-align: center;
+    color: #fff;
+    margin: 20px 0;
+    border-radius: 50%;
+
+}
+/* Posición relativa */
+.cajaRelativa{
+    position:relative;
+    top:0px;
+    left:px;
+}
+/* 
+se llama relativa por que los cambios que hagamos en la caja puede cambiar a corde a lo 
+display:block; (forma vertical)
+display:inline; (forma horizontal)
+
+a,span,img (se muestran en linea horizontal) */
+
+/* Posición fixed */
+/* Fixed siempre va a estar en una posición :0 por más que baje o suba se mantiene en esa posición */
+.cajaFixed{
+    position:fixed;
+    top: 0;
+    right: 0;
+    z-index:1
+    /* bottom:0; */
+}
+
+/* Posición absoluta */
+
+.cajaAbsoluta{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.cajaAbsoluta2{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.PadreRelativo{
+width: 400px;
+height: 500px;
+border: 1px solid red;
+position: relative;
+}
+
+/* Sticky funciona al viewport (a lo que se ve en pantalla)*/
+
+.sticky{
+    position:sticky;
+    top: 0;
+    background-color: blue;
+    z-index:0
+}
+/* Transiciones y animaciones */
+.buttonHover{
+    background-color: #4668a8;
+    color:white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    /* transition: all linear 300ms; */
+    transition: background-color linear 300ms, color linear 300ms, border linear 300ms;
+}
+
+.buttonHover:hover{
+    background-color: white;
+    color: #4668a8;
+    border: 1px solid #4668a8;
+    text-decoration: underline;
+
+}
+.img{
+    width:150px;
+    transition:filter ease-in 50px;
+}
+.img:hover{
+    filter:saturate(5)
+
+}
+.animaciones .caja{
+    animation: cambiar-color 2s infinite alternate;
+}
+.animaciones2 .caja{
+    animation: mover-caja 5s infinite alternate-reverse;
+}
+@keyframes cambiar-color{
+    0%{
+        background-color: red;
+    }
+    50%{
+        background-color: blue;
+    }
+    100%{
+        background-color: red;
+    }
+}
+@keyframes mover-caja{
+    0%{
+        transform: translateX(0);
+        background-color: green;
+
+    }
+    50%{
+        transform: translate(200px);
+        border-radius: 0px;
+        background-color: yellow;
+    }
+    100%{
+        transform: translateX(0px);
+        border-radius:50%;
+        background-color:red;
+    }
+}
