@@ -1,0 +1,74 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#porcentajes .estatico{
+    width: 400px;
+    height: 200px;
+    border: 1px solid red;
+}
+
+/* #porcentajes{
+    width: 400px;
+    border: 1px dashed black;
+} */
+#porcentajes .responsivo1{
+    width: 60%;
+    height: 200px;
+    border: 1px solid blue;
+    margin-top: 20px;
+}
+
+#porcentajes .responsivoPapa{
+    width: 100%;
+    /* max-width: 600px; */
+    background-color: red;
+    height: 200px;
+    padding: 20px;
+}
+.responsivoHijo{
+    width: 50%;
+    height: 100px;
+    background-color: blue;
+}
+.responsivoHijo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/* Media queries */
+
+/* @media screen and (min-width:640px) {
+    /* body{
+        background-color:black;
+    } 
+    #porcentajes .responsivo1{
+        width: 20%;
+        background-color: green;
+        color:white;
+        display: none;
+    }
+} */
+
+@media screen and (min-width:760px){
+    #porcentajes .responsivo1{
+        width: 100%;
+        background-color: red;
+        color: black;
+        display: block;
+    }
+}
+/* display block regresa visualmente el elemento (se quitó en el anterior) */
+
+/* 
+
+mobile max 768px
+tablet 768 para arriba
+desktop 1024 para ariba
+sl 1280 para arriba 
+2xl 1536px para arriba pantallas de 16" a 22"
+3xl 1920px para arriba 23" para arriba
+
+*/

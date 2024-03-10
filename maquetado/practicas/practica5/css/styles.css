@@ -1,0 +1,87 @@
+#back{
+    background-color: black;
+
+}
+.hi{
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+.say{
+    color: aliceblue;
+}
+.say1{
+    display: none;
+}
+.say2{
+    display: none;
+}
+.say3{
+    display: none;
+}
+.say4{
+    display: none;
+}
+.say5{
+    display: none;
+}
+@media screen and (min-width:768px){
+    #back{
+        background-color: red;
+    }
+    .say{
+        display: none;
+    }
+    .say1{
+        display: block;
+    }
+    
+
+}
+
+@media screen and (min-width:1024px){
+    #back{
+        background-color: blue;
+    }
+    .say1{
+        display: none;
+    }
+    .say2{
+        display: block;
+    }
+}
+
+@media screen and (min-width:1280px){
+    #back{
+        background-color: magenta;
+    }
+    .say2{
+        display: none;
+    }
+    .say3{
+        display: block;
+    }
+}
+
+@media screen and (min-width:1536px){
+    #back{
+        background-color: khaki;
+    }
+    .say3{
+        display: none;
+    }
+    .say4{
+        display: block;
+    }
+}
+
+@media screen and (min-width:1920px){
+    #back{
+        background-color: white;
+    }
+    .say4{
+        display: none;
+    }
+    .say5{
+        display: block;
+    }
+}
