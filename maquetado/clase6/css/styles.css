@@ -1,0 +1,58 @@
+.containerFlex{
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column;  row, row-reverse, column-reverse, column */
+    /* align-items: center;  Sirve para cambiar la posición de los elementos si no se tiene un align items pero su un justify content entonces los hará muy altos */
+    align-items: center; 
+    /* align-items strech sirve para poder configurar todas las cajas a su mismo tamaño */
+    /* SE DEBE PONER EN EL CONTENEDOR PADRE */
+    /* De esta forma podemos centrar los elementos */
+    justify-content: center; 
+    /* Se pueden poner space-around para que se separen solitos pero dejando espacios en los bordes y si queremos que tengan el 100% del espacio sería space-btwn en cambio para que todos tengan el mismo espacio sería con space-evenly */
+/* Si en lugar de  flex direction row se pone column, entonces se invierten las propiedades mencionadas anteriormente*/
+/* con onverflow hidden se esconden los elementos que se salen de un contenedor, adicionalmente sinó se puede poner overflow scroll  */
+/* flex-wrap sirve para "liberar el espacio vertical y evitar el overflow" también está el wrap-reverse (invierte los elementos) (en posición y no en numero a diferencia del row reverse) */
+/* } comandos para hacer el código más rápido, (div.class{$})*20 */
+/* gap:50px; sirve para ordenarlas y separadas*/
+
+/* flex-grow:1;
+flex-srink:1;
+flex-basis:0;
+sirve para tener todas las cajas al mismo tamaño
+o bien si no solamente con poner flex:1; ya con eso es más que suficiente
+ */
+}
+section{
+    border: 5px solid black;
+    display: flex;
+    gap:50px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+    /*  el align-content no funciona si no se tiene un wrap */
+    align-content: center;
+    width: 80%;
+    height: 600px;
+    position: relative;
+    left: 10%;
+    top: 50px;
+}
+.cajita{
+    /* el aling-self:center;también sirve para poder alinear al hijo */
+    background-color: rgb(198, 28, 85);
+    border: 5px solid  rgb(30, 28, 29) ;
+    border-radius: 2px;
+    width: 5%;
+    height: 10%;
+
+}
+#a{
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+.aa{
+    flex-direction: column;
+
+
+}
