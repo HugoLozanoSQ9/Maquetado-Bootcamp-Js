@@ -1,0 +1,10 @@
+//al nombrarlo con el _ el saas entiende que es un módulo 
+//Se recomienda tener las variables en el main  y hacer las propiedades en el módulo
+//Si no se pone el _ bajo se rearán otros archivos css dentro de las carpetas css
+.fondo2{
+
+    background-color: $colorDeFondoSeccion1;
+    height: 150px;
+    width: 300px;
+    margin: 50px;
+}

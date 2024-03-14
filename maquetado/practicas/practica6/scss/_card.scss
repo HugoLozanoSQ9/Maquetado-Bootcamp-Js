@@ -1,0 +1,25 @@
+@mixin card(){
+    box-sizing:content-box;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+}
+@mixin card1(){
+    box-sizing:border-box;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    border: 6px solid rgb(45, 45, 51);
+    border-radius: 20px;
+    background-color: rgb(163, 71, 71);
+    padding-bottom: 20px;
+}
+@mixin color(){
+    color: rgb(52, 255, 52);
+    padding-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    padding-left: 18px;
+    text-align: center;
+}

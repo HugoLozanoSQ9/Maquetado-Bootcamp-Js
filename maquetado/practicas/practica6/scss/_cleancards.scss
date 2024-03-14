@@ -1,0 +1,9 @@
+.cards{
+    @include card()
+}
+.card{
+    @include card1()
+}
+.color{
+    @include color()
+}  

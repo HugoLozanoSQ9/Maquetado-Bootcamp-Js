@@ -1,0 +1,58 @@
+//declarar variables 
+$colorDeFondoSeccion:red;
+$sectionMargin:20px 100px;
+//Mixins
+@mixin flexColumnCenter($flexDirection,$justify){
+    display: flex;
+    flex-direction: $flexDirection;
+    justify-content: $justify;
+    align-items: center;
+}
+
+.x{
+@include flexColumnCenter(column,center);
+//Con esto estoy indicando aquíel valor que tiene el flex-direction
+}
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+.fondo{
+    background-color: $colorDeFondoSeccion;
+    height: 150px;
+    width: 300px;
+    margin: $sectionMargin;
+}
+$colorDeFondoSeccion1:green;
+@import 'global';
+@import 'perfil';
+
+// //Nesting  si queremos indicar algo como: 
+// header h1{
+//  aquíe iria el texto
+// }
+// En sass sería
+// header{
+//     h1{
+//         propiedad
+//     }
+// // }
+// Otro ejemplo sería:
+// main{
+//     article{
+//         img{
+
+//         }
+//     }
+// }
+// el char & siver para poder hacer referencia a una clase papa por decir:
+// body{
+//     &:hover{ (body:hover)
+//         transform:scale(1.2);
+//     }
+// }

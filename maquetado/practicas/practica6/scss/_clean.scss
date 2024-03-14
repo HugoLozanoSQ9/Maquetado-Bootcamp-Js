@@ -1,0 +1,53 @@
+
+*{
+    @include all() 
+ }
+body{
+     @include body()
+}
+ 
+header{
+   
+    @include header()
+}
+
+header{
+    div{
+        ol{
+
+            @include divol()
+
+        }
+    }
+}
+
+header{
+    div{
+
+        @include headiv()
+
+    }
+}
+ 
+.font{
+   @include font()
+ }
+
+.fondo{
+    @include fondo()
+ }
+.fondo1{
+     @include fondo1()
+ }
+.fondo2{
+     @include fondo2()
+ }
+.fondo3{
+     @include fondo3()
+ }
+.orden{
+     @include orden()
+ }
+.orden1{
+   @include orden1()
+ }
