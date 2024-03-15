@@ -1,0 +1,29 @@
+
+.text{
+    color: rgb(252, 252, 252);
+    background-color: black;
+    border-radius: 20px;
+}
+.borde{
+    border: 0px;
+}
+.cir{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    
+}
+
+.marg{
+    margin-top: 50px;
+}
+.back{
+    background-color: black;
+    border-radius: 20px;
+    
+}
+.color{
+    color: white;
+}
+
+

@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(195, 201, 199);
+}
+.myborder{
+    border:5px  solid  rgb(195, 201, 199);
+    margin-top: 10px;
+    height: 200px;
+    border-radius: 15px;
+}
+.morado{
+    background-color: hsl(263, 55%, 52%);
+
+}
+.gris{
+    background-color: hsl(217, 19%, 35%);
+}
+.blanco{
+    background-color: hsl(0, 0%, 100%);
+}
+.negro{
+    background-color: hsl(219, 29%, 14%);
+}
+
+.icon{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-top: 10px;
+
+}
